@@ -1,0 +1,43 @@
+.cloth-section{
+    width: 100%;
+
+}
+
+.title{
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.cloth-options{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    font-size: 14px;
+    color: rgb(191, 191, 191);
+}
+
+.cloth-grid-number{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.cloth-grid-number li, .cloth-grid-order li{
+    border-bottom: 1px solid rgb(143, 143, 143);
+    cursor: pointer;
+}
+
+.cloth-grid-number li:hover , .cloth-grid-order li:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
+.cloth-grid-order{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+
+}

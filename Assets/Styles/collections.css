@@ -1,0 +1,31 @@
+/** COLLECTIONS CONTAINER **/
+
+.collections-container{
+    padding-top: 30px;
+    position: absolute;
+    display: none;
+    top: 60px;
+    padding: 30px 70px;
+    left: 0;
+    right: 0;
+    gap: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.collections-container li{
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.collections-container ul{
+    text-transform: uppercase;
+    list-style: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

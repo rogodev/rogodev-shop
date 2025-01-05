@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Jersey+15&family=Parkinsans:wght@300..800&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');  
+
+:root{
+  --background-color : #ffffff; 
+  --offers-color : #000272; 
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans",sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  
+}
+
+/** HEADER **/
+
+header{
+  width: 100vw;
+  height: fit-content;
+  padding: 12px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-header-nav{
+  width: 30%;
+  display: flex;
+
+}
+
+.primary-header-nav-list{
+  display: flex;
+  gap: 30px;
+}
+
+
+.primary-header-nav-list-item{
+  font-size: 14px;
+  position: relative;
+  font-weight: 600px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.primary-header-nav-list-item a{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+.primary-header-nav-list-item:hover a{
+  animation: borderAnimation 1.5s ease forwards
+}
+
+
+/** PRODUCTS CONTAINER **/
+
+.products-container{
+  padding-top: 30px;
+  position: absolute;
+  display: none;
+  top: 60px;
+  padding-left: 50px;
+  left: 0;
+  right: 0;
+  gap: 50px;
+  padding-bottom: 50px;
+  background-color: var(--background-color);
+}
+
+#products{
+  padding-bottom: 5px;
+  z-index: 5
+}
+
+.products-container ul{
+  text-transform: uppercase;
+  list-style: none;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.products-container ul li{
+  font-size: 13px;
+
+}
+
+.products-container ul li a{
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+}
+
+.products-container ul li a:hover{
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+.products-container ul h4{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Animación */
+.show {
+  animation: fadeInUp 0.2s ease forwards;
+}
+
+/* Keyframes para la animación */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Animación del borde inferior de izquierda a derecha */
+@keyframes borderAnimation {
+  from {
+      width: 0;
+      
+      border-bottom: 2px solid black; /* El color del borde es azul */
+  }
+  to {
+      width: 100%;
+      border-bottom: 2px solid black; /* Borde completo de izquierda a derecha */
+  }
+}
+
+
+
+
+.logo{
+  color: #000272;
+  font-size: 30px;
+}
+
+/** OFERTAS CONTAINER **/
+
+.barra-anuncios-container{
+  width: 100%;
+  height: 3.5vh;
+  background-color: var(--offers-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.barra-anuncios-container img{
+   width: 14px;
+   padding: 5px 0;
+}
+
+.secondary-header-nav{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.secondary-header-nav img{
+  width: 30px;
+}
+
+.anuncios{
+  color: white;
+  font-size: 13px;
+  width: 26%;
+  text-align: center;
+}
+
+.btn{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;  
+}
+
+@keyframes anuncio_animation_in{
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes anuncio_animation_out{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
