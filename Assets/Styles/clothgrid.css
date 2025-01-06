@@ -5,11 +5,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 18px;
+    gap:55px;
+    padding-bottom: 100px;
 }
 
 .cloth-grid-item{
-    width: 460px;
+    width: 420px;
     height: 600px;
     padding: 0 0 70px 0;
     display: flex;
@@ -23,14 +24,14 @@
 
 .cloth-grid-item img{
     position: absolute;
-    width: 460px;
+    width: 420px;
 }
 
 .cloth-grid-item-info{
     position: relative;
-    top: 550px;
+    top: 530px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding: 5px;
     text-align: left;
     transition: opacity 0.2s ease;
@@ -40,12 +41,12 @@
 
 .cloth-grid-item-info-compra{
     position: relative;
-    top: 520px;
+    top: 480px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 100%;
-    padding: 5px;
+    padding: 15px 5px;
     text-align: left;
     transition: opacity 0.2s ease;
     align-items: center;

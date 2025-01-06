@@ -2,6 +2,7 @@
 
 .collections-container{
     padding-top: 30px;
+    width: 100vw;
     position: absolute;
     display: none;
     top: 60px;
@@ -29,4 +30,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+
+.collections-container-item img{
+    width: 100%;
 }

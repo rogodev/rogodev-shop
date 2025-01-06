@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
+  overflow-x: hidden;
   
 }
 
@@ -70,6 +71,8 @@ header{
 /** PRODUCTS CONTAINER **/
 
 .products-container{
+  width: 100%;
+  height: 190px;
   padding-top: 30px;
   position: absolute;
   display: none;
@@ -77,9 +80,9 @@ header{
   padding-left: 50px;
   left: 0;
   right: 0;
-  gap: 50px;
-  padding-bottom: 50px;
+  gap: 1em;
   background-color: var(--background-color);
+  z-index: 5;
 }
 
 #products{
@@ -88,12 +91,14 @@ header{
 }
 
 .products-container ul{
+  width: 100%;
   text-transform: uppercase;
   list-style: none;
   opacity: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 5;
 }
 
 .products-container ul li{
