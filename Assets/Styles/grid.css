@@ -25,13 +25,12 @@
 }
 
 .cloth-grid-number li, .cloth-grid-order li{
-    border-bottom: 1px solid rgb(143, 143, 143);
     cursor: pointer;
 }
 
 .cloth-grid-number li:hover , .cloth-grid-order li:hover{
     color: black;
-    border-bottom: 1px solid black;
+    box-shadow: 0 2px 0 0 #000;
 }
 
 
@@ -40,4 +39,9 @@
     list-style: none;
     gap: 100px;
 
+}
+
+.btn-order-active{
+    color: black;
+    box-shadow: 0 2px 0 0 #000;
 }

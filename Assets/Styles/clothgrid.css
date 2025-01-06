@@ -1,0 +1,98 @@
+.cloth-grid{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.cloth-grid-item{
+    width: 460px;
+    height: 600px;
+    padding: 0 0 70px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cloth-grid-item div{
+    width: 100%;
+    overflow: hidden;
+}
+
+.cloth-grid-item img{
+    position: absolute;
+    width: 460px;
+}
+
+.cloth-grid-item-info{
+    position: relative;
+    top: 550px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: left;
+    transition: opacity 0.2s ease;
+    color: black;
+    
+}
+
+.cloth-grid-item-info-compra{
+    position: relative;
+    top: 520px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    transition: opacity 0.2s ease;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cloth-grid-item-info-compra ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.cloth-grid-item-info-compra ul li a{
+    color: grey;
+}
+
+.cloth-grid-item-info-compra ul li a:hover{
+    color: black;
+}
+
+.image-original{
+    transition: opacity 0.2s ease;
+}
+
+.image-hover{
+    transition: opacity 0.2s ease;
+}
+
+/* Cambiar imagen al pasar el ratón */
+.cloth-image-container:hover .image-original{
+    opacity: 0;
+}
+  
+.cloth-grid-item-info {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.3s ease;
+}
+
+  
+.cloth-grid-item:hover .cloth-grid-item-info {
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.cloth-grid-item:hover .cloth-grid-item-info-compra {
+    opacity: 1;
+    pointer-events: all;
+}
