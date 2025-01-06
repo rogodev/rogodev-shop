@@ -1,6 +1,6 @@
 # 🛍️ Tienda de Ropa - Página Web Profesional
 
-Este repositorio contiene el código fuente de una página web profesional para una tienda de ropa, inspirada en diseños modernos como [Fake Gods Brand](https://fakegodsbrand.com/collections/all). La web ofrece una experiencia de usuario fluida, minimalista y atractiva, ideal para marcas de moda que buscan destacar en el mercado digital.
+Este repositorio contiene el código fuente de una página web profesional para una tienda de ropa, inspirada en diseños modernos. La web ofrece una experiencia de usuario fluida, minimalista y atractiva, ideal para marcas de moda que buscan destacar en el mercado digital.
 
 ---
 
@@ -29,3 +29,58 @@ Este repositorio contiene el código fuente de una página web profesional para 
 ├── 📂 scripts
 │   └── main.js
 └── README.md
+```
+
+## 🚀 Tecnologías Utilizadas
+- **HTML5:** Para la estructura de las páginas.
+- **CSS3:** Con diseño responsive utilizando flexbox y grid.
+- **JavaScript:** Para funcionalidades dinámicas como el carrito de compras.
+
+
+## 📸 Capturas de Pantalla
+
+- Vista del catálogo de productos.
+
+
+- Vista del carrito de compras.
+
+## 🛠️ Instalación y Uso
+1. Clona este repositorio:
+```bash
+git clone https://github.com/tu-usuario/tienda-ropa-web.git
+```
+2. Abre el proyecto en tu editor de código favorito.
+3. Inicia un servidor local para visualizar la página:
+```bash
+npx live-server
+```
+4. Personaliza los archivos HTML, CSS y JavaScript según tus necesidades.
+
+
+## 📄 Cómo Contribuir
+Si deseas contribuir a este proyecto:
+
+1. Haz un fork del repositorio.
+
+2. Crea una nueva rama:
+```bash
+git checkout -b nueva-funcionalidad
+```
+3. Realiza tus cambios y haz un commit:
+```bash
+git commit -m "Añadir nueva funcionalidad"
+```
+4. Sube los cambios a tu repositorio:
+```bash
+git push origin nueva-funcionalidad
+```
+5. Abre un Pull Request en este repositorio.
+
+
+## 📬 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo:
+
+- 📧 Correo Electrónico: rodrigocabellohernandez@gmail.com
+- 📱 Instagram: @rcabelloo_
+
+
